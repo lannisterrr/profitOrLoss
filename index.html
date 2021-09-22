@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        font-size: larger;
+      }
+      input {
+        font-size: large;
+        display: block;
+        outline: #fff;
+        padding: 0.6rem 1rem;
+        margin: 1rem auto;
+        border: 2px solid green;
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 325px;
+      }
+
+      h1 {
+        text-align: center;
+        color: green;
+      }
+
+      button {
+        background: green;
+        border: none;
+        color: #fff;
+        padding: 0.7rem 1rem;
+        border-radius: 0.5rem;
+        font-size: large;
+        cursor: pointer;
+        outline: #fff;
+        margin: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stock Profile & Loss Calculator</h1>
+    <div class="container">
+      <label for="input-1">Initial Price</label>
+      <input type="number" id="input-1" />
+      <label for="input-2">Quantity of Price</label>
+      <input type="number" id="input-2" />
+      <label for="input-3">Current Price</label>
+      <input type="number" id="input-3" />
+      <button id="btn">Check</button>
+      <h3 id="output"></h3>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
